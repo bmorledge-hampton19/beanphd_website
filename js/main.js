@@ -56,13 +56,14 @@ function _animate_speech_bubble(chunk_index, char_index) {
         if (game_image == RAINBOW_SPONGE) {
             let iframe = document.createElement("iframe")
             iframe.src="https://www.youtube.com/embed/V_OVxxIvqVw"
-            iframe.width="560"
-            iframe.height="315"
+            iframe.width="560px"
+            iframe.height="315px"
             iframe.title="YouTube video player"
             iframe.frameborder="0"
             iframe.setAttribute("referrerpolicy", "strict-origin-when-cross-origin")
             iframe.allowFullscreen=true
             iframe.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            iframe.classList.add("dr-bean-speech-bubble-video")
             SPEECH_BUBBLE_DIV.appendChild(iframe)
 
             setTimeout(reset_idle_animation, 1000, rand_int_range(FLASK, COMPUTER))
