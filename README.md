@@ -1,2 +1,1 @@
-# beanphd_website
-The html site for beanphd.com
+# The Website for beanphd.com

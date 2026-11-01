@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dr. Bean Games</title>
+        <base target="_self" href="../../../">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta property="og:title" content="Dr. Bean Games" />
+        <meta property="og:site_name" content="Dr. Bean Games" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://beanphd.com/" />
+        <meta property="og:image" content="https://beanphd.com/images/dr_bean/large.png" />
+        <meta property="og:description" content="Dr. Bean's website. Stop by and chat with the bean himself!">
+        <link rel="icon" type="image/png" href="images/dr_bean/large.png"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Winky+Rough|PT+Sans+Caption">
+        <link rel="stylesheet" href="base.css"/>
+    </head>
+
+    <body style="background-color: #ffaa69;">
+        <div class="dr-bean-logo">
+            <img src="images/dr_bean/default.png" id = "dr-bean" alt="Hi! I'm Dr. Bean!" />
+        </div>
+
+        <div class="chat-container" id="chat-container">
+            <div class="dr-bean-speech-bubble" id="speech-bubble">
+                <div class="dr-bean-speech-bubble-text" id="msg"></div>
+            </div>
+            <hr class="chat-divider">
+            <div class="response-container" id="response-container">
+                <button class="skip-button" id="skip-button">
+                    <div class="user-response">Skip</div>
+                </button>
+                <script src="js/main.js"></script>
+                <script>
+                    init_speech_bubble(
+                        [
+                            "Great! Who doesn't love a good foray into the unknown!? ",
+                            "I know I do! ",
+                            "Now, what kind of adventure are you looking for?"
+                        ]
+                    )
+                    init_responses(
+                        [
+                            "A collaborative adventure!",
+                            "A triangular adventure!",
+                            "A teeny-tiny adventure!",
+                            "Can I see some of your other games?"
+                        ],
+                        [
+                            "chat_root/game_categories/adventure/bitty_buddies.html",
+                            "chat_root/game_categories/adventure/pythagoras.html",
+                            "chat_root/game_categories/adventure/nightlives.html",
+                            "chat_root/game_categories/game_categories_root_revisited.html"
+                        ]
+                    )
+                    start_speech_bubble()
+                </script>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="logo-links-container">
+                <a href="https://mr-dr-bean.itch.io/" target="_blank">
+                    <img src="images/link_logos/itchio-logo.svg" height="50px" />
+                </a>
+                <a href="mailto:drbean@beanphd.com">
+                    <img src="images/link_logos/email-logo.svg" height="50px" />
+                </a>
+            </div>
+            <div class="dr-bean-copyright">Dr. Bean Games LLC © 2026</div>
+        </div>
+    </body>
+</html>

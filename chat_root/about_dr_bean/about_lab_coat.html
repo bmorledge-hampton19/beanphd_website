@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dr. Bean Games</title>
+        <base target="_self" href="../../">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta property="og:title" content="Dr. Bean Games" />
+        <meta property="og:site_name" content="Dr. Bean Games" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://beanphd.com/" />
+        <meta property="og:image" content="https://beanphd.com/images/dr_bean/large.png" />
+        <meta property="og:description" content="Dr. Bean's website. Stop by and chat with the bean himself!">
+        <link rel="icon" type="image/png" href="images/dr_bean/large.png"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Winky+Rough|PT+Sans+Caption">
+        <link rel="stylesheet" href="base.css"/>
+    </head>
+
+    <body style="background-color: #ffaa69;">
+        <div class="dr-bean-logo">
+            <img src="images/dr_bean/default.png" id = "dr-bean" alt="Hi! I'm Dr. Bean!" />
+        </div>
+
+        <div class="chat-container" id="chat-container">
+            <div class="dr-bean-speech-bubble" id="speech-bubble">
+                <div class="dr-bean-speech-bubble-text" id="msg"></div>
+            </div>
+            <hr class="chat-divider">
+            <div class="response-container" id="response-container">
+                <button class="skip-button" id="skip-button">
+                    <div class="user-response">Skip</div>
+                </button>
+                <script src="js/main.js"></script>
+                <script>
+                    init_speech_bubble(
+                        [
+                            "I'm so glad you asked! ",
+                            "On my right, I've got a beautiful picture of a nucleosome. ",
+                            "They're the pieces of your genome that keep it nice and organized " +
+                            "so that your cells know how to do their jobs. ",
+                            "Each nucleosome is made up of about 147 base pairs of DNA wrapped tightly " +
+                            "around 8 histone proteins, and you've got millions of them in each of your cells! ",
+                            "If you look on the other side of my coat, you'll find the DNA double helix itself. ",
+                            "(This is what you'd see if you zoomed in really close to the surface of the nucleosome.) ",
+                            "The double helix is a very clever structure, because it can be split in half, " +
+                            "and each strand still has all the information you need to recreate the other side. ",
+                            "That's why you can grow and learn and change and still be you! ",
+                            "Isn't biology amazing?!"
+                        ]
+                    )
+                    init_responses(
+                        [
+                            "Why are you blue?",
+                            "Are those leaves real?",
+                            "What's in that flask?",
+                            "What are you doing on that laptop?",
+                            "Nice to meet you, Dr. Bean!"
+                        ],
+                        [
+                            "chat_root/about_dr_bean/about_blue.html",
+                            "chat_root/about_dr_bean/about_leaves.html",
+                            "chat_root/about_dr_bean/about_flask.html",
+                            "chat_root/about_dr_bean/about_computer.html",
+                            "chat_root/from_about_root.html"
+                        ]
+                    )
+                    start_speech_bubble()
+                </script>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="logo-links-container">
+                <a href="https://mr-dr-bean.itch.io/" target="_blank">
+                    <img src="images/link_logos/itchio-logo.svg" height="50px" />
+                </a>
+                <a href="mailto:drbean@beanphd.com">
+                    <img src="images/link_logos/email-logo.svg" height="50px" />
+                </a>
+            </div>
+            <div class="dr-bean-copyright">Dr. Bean Games LLC © 2026</div>
+        </div>
+    </body>
+</html>
