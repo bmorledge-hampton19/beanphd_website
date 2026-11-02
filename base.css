@@ -76,8 +76,8 @@
     margin: auto;
     margin-top: 10px;
     width: 560px;
-    aspect-ratio: 16/9;
     max-width: 90%;
+    aspect-ratio: 16/9;
     animation: speech-bubble-video-tween 2s forwards;
 }
 @keyframes speech-bubble-video-tween {
