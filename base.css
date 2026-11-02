@@ -36,7 +36,7 @@
 }
 .dr-bean-speech-bubble-text {
     font-family: 'Winky Rough', sans-serif;
-    font-size: 1.5em;
+    font-size: 24px;
     color: white;
     white-space: pre-line;
 }
@@ -130,7 +130,7 @@
 }
 .user-response {
     font-family: 'Winky Rough', sans-serif;
-    font-size: 1.5em;
+    font-size: 24px;
     color: white;
     text-align: center;
 
