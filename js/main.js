@@ -56,8 +56,6 @@ function _animate_speech_bubble(chunk_index, char_index) {
         if (game_image == RAINBOW_SPONGE) {
             let iframe = document.createElement("iframe")
             iframe.src="https://www.youtube.com/embed/V_OVxxIvqVw"
-            iframe.width="560px"
-            iframe.height="315px"
             iframe.title="YouTube video player"
             iframe.frameborder="0"
             iframe.setAttribute("referrerpolicy", "strict-origin-when-cross-origin")
